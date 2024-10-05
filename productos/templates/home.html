@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Store</title>
+    <script src="https://kit.fontawesome.com/969ad1287d.js" crossorigin="anonymous"></script>
+    {% load static %}
+    
+    <link rel="stylesheet" href="{% static 'productos/css/home.css' %}"/>
+
+    {% load static %}
+
+     <script src="{% static 'productos/js/home.js' %}"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans">
+    
+    <header class="bg-[#4B3F32] p-[20px] flex items-center justify-between text-white">
+        <div class="flex items-center gap-10">
+           <img class="rounded-full ml-[40px] " src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/sneakers-store-brand-logo%2C-sneaker-store-logo-design-template-cd4d67885f338eb3623ea9e1a7d92328_screen.jpg?ts=1695153682" alt="" width="100">
+           <h3 class="text-3xl">Shoes Store</h3>
+        </div>
+
+        <div class="mr-[100px] ">
+
+            <ul  class="flex gap-10">
+                <li><a href="" class="text-3xl hover:underline">Home</a></li>
+                <li><a href="" class="text-3xl hover:underline">Products</a></li>
+
+                <li><a href="" class="text-3xl hover:underline">Offers</a></li>
+                <li><a href="" class="text-3xl hover:underline">Contact</a></li>
+            </ul>
+
+        </div >
+    </header>
+    <main>
+        <section class="welcome">
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+                <div class="flex items-center bg-[#2D677A] ">
+                    <p class="p-[20px] text-2xl text-white">Welcome to our Shoes Store
+                        Step up your sneaker game with our premium selection! At Argueta Store, we offer the latest and trendiest sneakers from top brands, blending style, comfort, and performance. Whether you’re into classic streetwear or cutting-edge designs, we’ve got the perfect kicks to match your vibe. Explore our wide range of men’s, women’s, and kids’ sneakers, and stay ahead of the fashion curve.</p>
+    
+                </div>
+                
+                <div>
+                    <img src="https://media.gq.com/photos/60d21a25ab6b8cc6e9d2c80a/4:3/w_4800,h_3600,c_limit/SNEAKER_GUIDE_OPENER.jpg" alt="">
+                </div>
+                   
+               
+            </div>
+
+        </section>
+
+        <section class="products grid grid-cols-1 bg-[#A06B35] pt-[100px] pb-[100px]">
+                  <h3 class="text-center text-4xl text-white pb-[50px]">Our products</h3>
+
+                  <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-1 ml-[10px] mr-[10px]">
+
+
+                    <div class="border-2 border-white rounded-lg men-shoes flex flex-col items-center pb-[30px]">
+                        <h3 class="text-center text-2xl text-white mt-[20px]">Men shoes</h3>
+                        <a href=""><img class="rounded-md mt-[50px]" src="https://i5.walmartimages.com/seo/Fashion-Running-Sneaker-for-Men-Shoes-Casual-Shoes-Leather-Sport-Shoes-Breathable-Comfortable-Walking-Shoes-Black-US11_8e9d44bb-b19b-42e9-bca1-979205c0779e.6fc41a815c10699375294302df46565a.jpeg" alt="" width="400"></a>
+                    </div>
+
+
+                    <div class="border-2 border-white rounded-lg child-shoes flex flex-col items-center pb-[30px]">
+                        <h3 class="text-center text-2xl text-white mt-[20px]">Child shoes</h3>
+                        <img class="rounded-md mt-[50px] " src="https://nypost.com/wp-content/uploads/sites/2/2023/07/bestkidssneakers.jpg?quality=75&strip=all" alt="" width="400">
+                    </div>
+
+
+                    <div class="border-2 border-white rounded-lg men-shoes flex flex-col items-center pb-[30px]">
+                        <h3 class="text-center text-2xl text-white mt-[20px]">Women shoes</h3>
+                        <img class="rounded-md mt-[50px] " src="https://i5.walmartimages.com/seo/Women-Shoes-Fashion-Solid-Color-Mesh-Metal-Chain-Decorative-Platform-Casual-Shoes-White-8-5_bfb2b081-c54d-468b-b044-1fba2bb4b5dc.f2c4d737b8c6eaa224af344f5a7cf3f9.jpeg" alt="" width="400">
+                    </div>
+
+                    
+
+                    
+
+                  </div>
+
+        </section>
+
+        <section class=" grid grid-cols-1 bg-[#FF890C] contact pb-[40px] pt-[40px] border-2 border-white">
+            <h2 class="text-[3.5rem] text-center text-white">Contact us</h2>
+            <div class="flex flex-col items-center text-white">
+                <p class="text-[3rem] m-[20px]"><i class="fa-solid fa-phone text-[3rem] mr-[20px]"></i> +5037865423</p>
+                <p class="text-[3rem] m-[20px]"><i class="fa-brands fa-instagram text-[3rem] mr-[20px]"></i> shoestore@2024</p>
+                <p class="text-[3rem] m-[20px]"><i class="fa-brands fa-facebook text-[3rem] mr-[20px]"></i>ShoesStoreSV</p>
+                <p class="text-[3rem] m-[20px]"><i class="fa-brands fa-whatsapp text-[3rem] mr-[20px]"></i>78655423</p>
+
+            </div>
+            
+
+
+
+        </section>
+
+    </main>
+    
+
+    <footer class="  bg-[#3D4F55] text-white h-[200px] flex flex-col items-center justify-center ">
+         <p class="text-3xl"> Programado por: Jhoni Argueta Lemus</p>
+         <p>&copy; 2024 ArguetaDev. All rights reserved.</p>
+    </footer>
+</body>
+</html>
