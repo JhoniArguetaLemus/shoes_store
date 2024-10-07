@@ -25,11 +25,11 @@
         <div class="mr-[100px] ">
 
             <ul  class="flex gap-10">
-                <li><a href="" class="text-3xl hover:underline">Home</a></li>
-                <li><a href="" class="text-3xl hover:underline">Products</a></li>
+                <li><a href="#" class="text-3xl hover:underline">Home</a></li>
+                <li><a href="#products" class="text-3xl hover:underline">Products</a></li>
 
-                <li><a href="" class="text-3xl hover:underline">Offers</a></li>
-                <li><a href="" class="text-3xl hover:underline">Contact</a></li>
+                <li><a href="#offers" class="text-3xl hover:underline">Offers</a></li>
+                <li><a href="#contact" class="text-3xl hover:underline">Contact</a></li>
             </ul>
 
         </div >
@@ -52,7 +52,7 @@
 
         </section>
 
-        <section class="products grid grid-cols-1 bg-[#A06B35] pt-[100px] pb-[100px]">
+        <section class="products grid grid-cols-1 bg-[#A06B35] pt-[100px] pb-[100px]" id="products">
                   <h3 class="text-center text-4xl text-white pb-[50px]">Our products</h3>
 
                   <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-1 ml-[10px] mr-[10px]">
@@ -60,7 +60,7 @@
 
                     <div class="border-2 border-white rounded-lg men-shoes flex flex-col items-center pb-[30px]">
                         <h3 class="text-center text-2xl text-white mt-[20px]">Men shoes</h3>
-                        <a href=""><img class="rounded-md mt-[50px]" src="https://i5.walmartimages.com/seo/Fashion-Running-Sneaker-for-Men-Shoes-Casual-Shoes-Leather-Sport-Shoes-Breathable-Comfortable-Walking-Shoes-Black-US11_8e9d44bb-b19b-42e9-bca1-979205c0779e.6fc41a815c10699375294302df46565a.jpeg" alt="" width="400"></a>
+                        <a href="{% url 'mens'  %}"><img class="rounded-md mt-[50px]" src="https://i5.walmartimages.com/seo/Fashion-Running-Sneaker-for-Men-Shoes-Casual-Shoes-Leather-Sport-Shoes-Breathable-Comfortable-Walking-Shoes-Black-US11_8e9d44bb-b19b-42e9-bca1-979205c0779e.6fc41a815c10699375294302df46565a.jpeg" alt="" width="400"></a>
                     </div>
 
 
@@ -72,7 +72,7 @@
 
                     <div class="border-2 border-white rounded-lg men-shoes flex flex-col items-center pb-[30px]">
                         <h3 class="text-center text-2xl text-white mt-[20px]">Women shoes</h3>
-                        <img class="rounded-md mt-[50px] " src="https://i5.walmartimages.com/seo/Women-Shoes-Fashion-Solid-Color-Mesh-Metal-Chain-Decorative-Platform-Casual-Shoes-White-8-5_bfb2b081-c54d-468b-b044-1fba2bb4b5dc.f2c4d737b8c6eaa224af344f5a7cf3f9.jpeg" alt="" width="400">
+                        <a href="{% url 'women' %}"><img class="rounded-md mt-[50px] " src="https://i5.walmartimages.com/seo/Women-Shoes-Fashion-Solid-Color-Mesh-Metal-Chain-Decorative-Platform-Casual-Shoes-White-8-5_bfb2b081-c54d-468b-b044-1fba2bb4b5dc.f2c4d737b8c6eaa224af344f5a7cf3f9.jpeg" alt="" width="400"></a>
                     </div>
 
                     
@@ -83,7 +83,7 @@
 
         </section>
 
-        <section class=" grid grid-cols-1 bg-[#FF890C] contact pb-[40px] pt-[40px] border-2 border-white">
+        <section class=" grid grid-cols-1 bg-[#FF890C] contact pb-[40px] pt-[40px] border-2 border-white" id="contact">
             <h2 class="text-[3.5rem] text-center text-white">Contact us</h2>
             <div class="flex flex-col items-center text-white">
                 <p class="text-[3rem] m-[20px]"><i class="fa-solid fa-phone text-[3rem] mr-[20px]"></i> +5037865423</p>
