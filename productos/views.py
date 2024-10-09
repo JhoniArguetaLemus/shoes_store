@@ -31,3 +31,20 @@ def buscar_productos(request):
         
     
     return render(request,'women.html', {'results':results, 'query':query} )
+
+
+
+def search_men_shoes(request):
+    query=request.GET.get('q')
+    results=None
+    if query:
+        results=Men.objects.filter(shoe_name__icontains=query)| Men.objects.filter(shoe_description__icontains=query)
+    elif not query:
+        results=Men.objects.all()
+        
+    
+    return render(request,'mens.html', {'results':results, 'query':query} )
+
+
+    
+    

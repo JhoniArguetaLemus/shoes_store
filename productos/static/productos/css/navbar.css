@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#btnOpen, #close{
+    display: none;
+}
+
+@media screen and (max-width: 767px){
+    
+  
+    nav .visible{
+        visibility: visible;
+    }
+     nav{
+        visibility: hidden;
+     }
+  
+     nav{
+        min-height: 100vh;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: black;
+        padding: 2rem;
+        transition: .2s ease-in-out;
+  
+     }
+     
+     nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+     }
+     .div-logo img{
+        width: 70px;
+     }
+}

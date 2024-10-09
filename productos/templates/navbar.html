@@ -1,18 +1,30 @@
+{% load static%}
+
+<script src="https://kit.fontawesome.com/597d9cf0ae.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'productos/css/navbar.css' %}"/>
+
 <header class="bg-[#4B3F32] p-[20px] flex items-center justify-between text-white">
-    <div class="flex items-center gap-10">
+    <div class="flex items-center gap-10 div-logo">
        <img class="rounded-full ml-[40px] " src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/sneakers-store-brand-logo%2C-sneaker-store-logo-design-template-cd4d67885f338eb3623ea9e1a7d92328_screen.jpg?ts=1695153682" alt="" width="100">
        <h3 class="text-3xl">Shoes Store</h3>
+     <button id="btnOpen">  <i class=" text-3xl fa-solid fa-bars" ></i></button>
     </div>
 
-    <div class="mr-[100px] ">
+    <div class="mr-[100px]  " >
+        <nav class="" id="navbar">
 
-        <ul  class="flex gap-10">
+        <ul  class="flex gap-10 ">
+            <Button id="close" class=" text-right mr-[30px] "><i class="fa-solid fa-x text-3xl text-white text-left"></i></Button>
             <li><a href="#" class="text-3xl hover:underline">Home</a></li>
             <li><a href="#products" class="text-3xl hover:underline">Products</a></li>
 
             <li><a href="#offers" class="text-3xl hover:underline">Offers</a></li>
             <li><a href="#contact" class="text-3xl hover:underline">Contact</a></li>
+            <li > <div class=""><i class="fa-solid fa-cart-shopping  text-3xl cursor-pointer "></i></div></li>
         </ul>
 
+    </nav>
+
     </div >
+    <script src="{% static 'productos/js/navbar.js'  %}"></script>
 </header>
